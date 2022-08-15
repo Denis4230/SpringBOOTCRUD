@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User page</title>
+</head>
+<body>
+<h1>User</h1>
+<p th:text="'Id: ' + ${showUser.getId()}">ID</p>
+<p th:text="'Name : ' + ${showUser.getName()}">NAME</p>
+<p th:text="'Last name : ' + ${showUser.getLastName()}">LAST NAME</p>
+<p th:text="'Age : ' + ${showUser.getAge()}">AGE</p>
+<br>
+<button onclick="window.location.href = '..';">Back</button>
+</body>
+</html>
